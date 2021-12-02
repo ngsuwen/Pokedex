@@ -3,7 +3,8 @@ const app = express();
 const Pokemon = require('../pokedex/pokemon');
 const pokemonFiltered=Pokemon.slice(0,100)
 // PORT
-PORT = 3000
+PORT = process.env.PORT || 3000
+
 app.use(express.urlencoded())
 const methodOverride = require("method-override")
 //-----------------MPA--------------------
