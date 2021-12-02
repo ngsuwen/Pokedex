@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const Pokemon = require('../pokedex/pokemon');
+const Pokemon = require('./models/pokemon');
 const pokemonFiltered=Pokemon.slice(0,100)
 // PORT
 PORT = process.env.PORT || 3000
